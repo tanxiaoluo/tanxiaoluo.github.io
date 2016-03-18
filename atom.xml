@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-18T14:07:44.884Z</updated>
+  <updated>2016-03-18T14:27:28.263Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,14 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>生活总是得记录一下</title>
     <link href="http://yoursite.com/2016/03/18/hello-hexo/"/>
     <id>http://yoursite.com/2016/03/18/hello-hexo/</id>
-    <published>2016-03-18T14:07:44.884Z</published>
-    <updated>2016-03-18T14:07:44.884Z</updated>
+    <published>2016-03-18T13:11:22.000Z</published>
+    <updated>2016-03-18T14:27:28.263Z</updated>
     
-    <content type="html">&lt;p&gt;title: 生活总是得记录一下&lt;br&gt;date: 2016-03-18 21:11:22&lt;/p&gt;
-&lt;h2 id=&quot;tags_3A__u968F_u7B14&quot;&gt;&lt;a href=&quot;#tags_3A__u968F_u7B14&quot; class=&quot;headerlink&quot; title=&quot;tags: 随笔&quot;&gt;&lt;/a&gt;tags: 随笔&lt;/h2&gt;&lt;h1 id=&quot;0__u7F18_u8D77&quot;&gt;&lt;a href=&quot;#0__u7F18_u8D77&quot; class=&quot;headerlink&quot; title=&quot;0 缘起&quot;&gt;&lt;/a&gt;0 缘起&lt;/h1&gt;&lt;p&gt;一直嚷嚷着要建一个博客，但是由于各种原因（当然主要是因为懒）。最近刚刚换了一家公司，产品处于调整期，于是我就有了大把大把的时间向博客说一声hello world。&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;0__u7F18_u8D77&quot;&gt;&lt;a href=&quot;#0__u7F18_u8D77&quot; class=&quot;headerlink&quot; title=&quot;0 缘起&quot;&gt;&lt;/a&gt;0 缘起&lt;/h1&gt;&lt;p&gt;一直嚷嚷着要建一个博客，但是由于各种原因（当然主要是因为懒）。最近刚刚换了一家公司，产品处于调整期，于是我就有了大把大把的时间向博客说一声hello world。&lt;/p&gt;
 &lt;h1 id=&quot;1_hello_world&quot;&gt;&lt;a href=&quot;#1_hello_world&quot; class=&quot;headerlink&quot; title=&quot;1 hello world&quot;&gt;&lt;/a&gt;1 hello world&lt;/h1&gt;&lt;p&gt;既然谈到了”hello world”,那么就用那些年听到的一个段子作为开头。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;程序员告老还乡,想安度晚年,于是决定在书法上有所造诣。一日,饭后突生雅兴,一番研墨拟纸,并点上上好檀香。定神片刻,泼墨挥毫,挥起毛笔在白纸上郑重的写下: Hello World&lt;/p&gt;
@@ -36,11 +35,12 @@
     
     <summary type="html">
     
-      &lt;p&gt;title: 生活总是得记录一下&lt;br&gt;date: 2016-03-18 21:11:22&lt;/p&gt;
-&lt;h2 id=&quot;tags_3A__u968F_u7B14&quot;&gt;&lt;a href=&quot;#tags_3A__u968F_u7B14&quot; class=&quot;headerlink&quot; title=
+      &lt;h1 id=&quot;0__u7F18_u8D77&quot;&gt;&lt;a href=&quot;#0__u7F18_u8D77&quot; class=&quot;headerlink&quot; title=&quot;0 缘起&quot;&gt;&lt;/a&gt;0 缘起&lt;/h1&gt;&lt;p&gt;一直嚷嚷着要建一个博客，但是由于各种原因（当然主要是因为懒）。最近刚刚换了一家公司，
     
     </summary>
     
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
