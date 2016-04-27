@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-27T14:32:24.810Z</updated>
+  <updated>2016-04-27T14:52:03.601Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>如果优雅的&quot;停止&quot;一个正在运行的JAVA线程</title>
-    <link href="http://yoursite.com/2016/04/27/%E5%A6%82%E6%9E%9C%E4%BC%98%E9%9B%85%E7%9A%84-%E5%81%9C%E6%AD%A2-%E4%B8%80%E4%B8%AA%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E7%9A%84JAVA%E7%BA%BF%E7%A8%8B/"/>
-    <id>http://yoursite.com/2016/04/27/如果优雅的-停止-一个正在运行的JAVA线程/</id>
+    <title>如何优雅的&quot;停止&quot;一个正在运行的JAVA线程</title>
+    <link href="http://yoursite.com/2016/04/27/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E5%81%9C%E6%AD%A2%E4%B8%80%E4%B8%AA%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E7%9A%84JAVA%E7%BA%BF%E7%A8%8B/"/>
+    <id>http://yoursite.com/2016/04/27/如何优雅的停止一个正在运行的JAVA线程/</id>
     <published>2016-04-27T14:23:19.000Z</published>
-    <updated>2016-04-27T14:32:24.810Z</updated>
+    <updated>2016-04-27T14:52:03.601Z</updated>
     
     <content type="html">&lt;p&gt;最近在开发过程中，遇到一个需求&lt;/p&gt;
 &lt;ul&gt;
