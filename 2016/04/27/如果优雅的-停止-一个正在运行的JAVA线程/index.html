@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="随笔," />
+  <meta name="keywords" content="Android,JAVA,Thread," />
 
 
 
@@ -59,25 +59,46 @@
 
 
 
-<meta name="description" content="缘起一直嚷嚷着要建一个博客，但是由于各种原因（当然主要是因为懒）。最近刚刚换了一家公司，产品处于调整期，于是我就有了大把大把的时间向博客说一声hello world。
-hello world既然谈到了”hello world”,那么就用那些年听到的一个段子作为开头。
+<meta name="description" content="最近在开发过程中，遇到一个需求
 
-程序员告老还乡,想安度晚年,于是决定在书法上有所造诣。一日,饭后突生雅兴,一番研墨拟纸,并点上上好檀香。定神片刻,泼墨挥毫,挥起毛">
+当用户输完快递单号后，发起请求，自动补全手机号码
+请求超过5秒后结束请求，并提示用户没找到手机号
+
+第一发很简单的需求，是吧。然后我就啪啪啪写下了代码。
+public void request() {
+
+    thread = new Thread(new Runnable() {
+        @Override
+        public void ru">
 <meta property="og:type" content="article">
-<meta property="og:title" content="生活总是得记录一下">
-<meta property="og:url" content="http://yoursite.com/2016/03/18/hello-hexo/index.html">
+<meta property="og:title" content="如果优雅的"停止"一个正在运行的JAVA线程">
+<meta property="og:url" content="http://yoursite.com/2016/04/27/如果优雅的-停止-一个正在运行的JAVA线程/index.html">
 <meta property="og:site_name" content="tanxiaoluo's Blog">
-<meta property="og:description" content="缘起一直嚷嚷着要建一个博客，但是由于各种原因（当然主要是因为懒）。最近刚刚换了一家公司，产品处于调整期，于是我就有了大把大把的时间向博客说一声hello world。
-hello world既然谈到了”hello world”,那么就用那些年听到的一个段子作为开头。
+<meta property="og:description" content="最近在开发过程中，遇到一个需求
 
-程序员告老还乡,想安度晚年,于是决定在书法上有所造诣。一日,饭后突生雅兴,一番研墨拟纸,并点上上好檀香。定神片刻,泼墨挥毫,挥起毛">
-<meta property="og:updated_time" content="2016-04-27T14:46:56.257Z">
+当用户输完快递单号后，发起请求，自动补全手机号码
+请求超过5秒后结束请求，并提示用户没找到手机号
+
+第一发很简单的需求，是吧。然后我就啪啪啪写下了代码。
+public void request() {
+
+    thread = new Thread(new Runnable() {
+        @Override
+        public void ru">
+<meta property="og:updated_time" content="2016-04-27T14:32:24.810Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="生活总是得记录一下">
-<meta name="twitter:description" content="缘起一直嚷嚷着要建一个博客，但是由于各种原因（当然主要是因为懒）。最近刚刚换了一家公司，产品处于调整期，于是我就有了大把大把的时间向博客说一声hello world。
-hello world既然谈到了”hello world”,那么就用那些年听到的一个段子作为开头。
+<meta name="twitter:title" content="如果优雅的"停止"一个正在运行的JAVA线程">
+<meta name="twitter:description" content="最近在开发过程中，遇到一个需求
 
-程序员告老还乡,想安度晚年,于是决定在书法上有所造诣。一日,饭后突生雅兴,一番研墨拟纸,并点上上好檀香。定神片刻,泼墨挥毫,挥起毛">
+当用户输完快递单号后，发起请求，自动补全手机号码
+请求超过5秒后结束请求，并提示用户没找到手机号
+
+第一发很简单的需求，是吧。然后我就啪啪啪写下了代码。
+public void request() {
+
+    thread = new Thread(new Runnable() {
+        @Override
+        public void ru">
 
 
 
@@ -95,7 +116,7 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
   };
 </script>
 
-  <title> 生活总是得记录一下 | tanxiaoluo's Blog </title>
+  <title> 如果优雅的"停止"一个正在运行的JAVA线程 | tanxiaoluo's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -215,7 +236,7 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
             
             
               
-                生活总是得记录一下
+                如果优雅的"停止"一个正在运行的JAVA线程
               
             
           </h1>
@@ -227,8 +248,8 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-18T21:11:22+08:00" content="2016-03-18">
-              2016-03-18
+            <time itemprop="dateCreated" datetime="2016-04-27T22:23:19+08:00" content="2016-04-27">
+              2016-04-27
             </time>
           </span>
 
@@ -238,8 +259,8 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/18/hello-hexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/18/hello-hexo/" itemprop="commentsCount"></span>
+                <a href="/2016/04/27/如果优雅的-停止-一个正在运行的JAVA线程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/27/如果优雅的-停止-一个正在运行的JAVA线程/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -261,15 +282,137 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
       
 
       
-        <h1 id="u7F18_u8D77"><a href="#u7F18_u8D77" class="headerlink" title="缘起"></a>缘起</h1><p>一直嚷嚷着要建一个博客，但是由于各种原因（当然主要是因为懒）。最近刚刚换了一家公司，产品处于调整期，于是我就有了大把大把的时间向博客说一声hello world。</p>
-<h1 id="hello_world"><a href="#hello_world" class="headerlink" title="hello world"></a>hello world</h1><p>既然谈到了”hello world”,那么就用那些年听到的一个段子作为开头。</p>
+        <p>最近在开发过程中，遇到一个需求</p>
+<ul>
+<li>当用户输完快递单号后，发起请求，自动补全手机号码</li>
+<li>请求超过5秒后结束请求，并提示用户没找到手机号</li>
+</ul>
+<h2 id="u7B2C_u4E00_u53D1"><a href="#u7B2C_u4E00_u53D1" class="headerlink" title="第一发"></a>第一发</h2><p>很简单的需求，是吧。然后我就啪啪啪写下了代码。</p>
+<pre><code>public void request() {
+
+    thread = new Thread(new Runnable() {
+        @Override
+        public void run() {
+            // 请求网络
+            // ...
+            // ...
+            // 返回结果请求To UI
+        }
+    });
+
+    thread.start();
+
+    new Handler().postDelayed(new Runnable() {
+        @Override
+        public void run() {
+            thread.stop();
+        }
+    }, 5 * 1000);
+
+}
+</code></pre><p>看起来是这么的完美。不过这个stop上面有一根删除线是什么鬼。它的文档是这样描述的。<br><a id="more"></a></p>
 <blockquote>
-<p>程序员告老还乡,想安度晚年,于是决定在书法上有所造诣。一日,饭后突生雅兴,一番研墨拟纸,并点上上好檀香。定神片刻,泼墨挥毫,挥起毛笔在白纸上郑重的写下: Hello World<br><a id="more"></a></p>
+<p>Requests the receiver Thread to stop and throw ThreadDeath. The Thread is resumed if it was suspended and awakened if it was sleeping, so that it can proceed to throw ThreadDeath.<br>@deprecated<br>because stopping a thread in this manner is unsafe and can leave your application and the VM in an unpredictable state.</p>
 </blockquote>
-<p>这是当年学习Android时候,看Mars老师的视频学习到的段子。在此特别感谢Mars老师带我领走入我Android学习之路，一个大写的感谢。</p>
-<h1 id="why_Hexo"><a href="#why_Hexo" class="headerlink" title="why Hexo"></a>why Hexo</h1><p>原计划是打算在新浪云上自己搭建一个blog，但是懒癌严重的我一直拖到了新浪云开始对普通用户收费，都还没有下定决心去hello world一下。今天刷V2的时候，看到了一篇<a href="http://v2ex.com/t/264283" target="_blank" rel="external">Hexo 部署 Github， Coding 进行国内外分流最全教程</a>，终于开始了博客之路。</p>
-<h1 id="u642D_u5EFA_u8FC7_u7A0B"><a href="#u642D_u5EFA_u8FC7_u7A0B" class="headerlink" title="搭建过程"></a>搭建过程</h1><p>搭建过程倒没什么好说的，毕竟教程里面都有。不过在搭建过程中的一些选择着实让人伤脑。首先是blog名字，关于这个起名字，韩寒在《长安乱》中大肆吐槽。再接着是签名，想了下用了一句易经中的“元亨利牡马之贞”，这句话可有意思了，有时间可以详细来吹吹。接着是主题的选择，选择了<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a>,一个简单清爽的主题。</p>
-<h1 id="u751F_u6D3B_u603B_u662F_u5F97_u8BB0_u5F55_u4E00_u4E0B"><a href="#u751F_u6D3B_u603B_u662F_u5F97_u8BB0_u5F55_u4E00_u4E0B" class="headerlink" title="生活总是得记录一下"></a>生活总是得记录一下</h1><p>一天，许许多多的事情在发生，总得记录一下。</p>
+<p>大概意思就是，调用这个方法会抛出一个ThreadDeath的异常。用这个方法去停止一个线程是不安全的，它会让你的应用和VM处于一个不可预知的状态。</p>
+<h2 id="u7B2C_u4E8C_u53D1"><a href="#u7B2C_u4E8C_u53D1" class="headerlink" title="第二发"></a>第二发</h2><p>stop()方法是不安全的，故不再使用，在api中还有一个interrupt()方法。<br>我们接下来看看这个interrupt()是怎么个用法。</p>
+<ul>
+<li>如果该线程正阻塞于Object类的wait()、wait(long)、wait(long, int)方法，或者Thread类的join()、join(long)、join(long, int)、sleep(long)、sleep(long, int)方法，则该线程的中断状态将被清除，并收到一个java.lang.InterruptedException。</li>
+<li>如果该线程正阻塞于interruptible channel上的I/O操作，则该通道将被关闭，同时该线程的中断状态被设置，并收到一个java.nio.channels.ClosedByInterruptException。</li>
+<li>如果该线程正阻塞于一个java.nio.channels.Selector操作，则该线程的中断状态被设置，它将立即从选择操作返回，并可能带有一个非零值，就好像调用java.nio.channels.Selector.wakeup()方法一样。</li>
+<li>如果上述条件都不成立，则该线程的中断状态将被设置。</li>
+</ul>
+<p>从这个描述中，可以看出，interrupt()并不会直接的去停止线程，而是去设置一个中断状态，也就是打了一个标记，系统在合适的时候会去停止这个线程。</p>
+<p>提到interrupt()，有两个方法就不得不说。</p>
+<pre><code>public static boolean interrupted() {
+    return currentThread().isInterrupted(true);
+}
+</code></pre><p>检测当前线程是否中断，是就返回true，否则false，并清除中断状态（就是把中断标志设置为false）</p>
+<pre><code>public boolean isInterrupted() {
+    return isInterrupted(false);
+}
+</code></pre><p>检测当前线程是否已经中断，是则返回true，否则false。中断状态不受该方法的影响。如果中断调用时线程已经不处于活动状态，则返回false。</p>
+<p>这两个方法长得有点像，故使用的时候要注意一下子。</p>
+<p>这么看来，一个正在运行的线程是不能立即被安全的停止，当然这是对于机器来说，但是我们可以控制这个线程在某时间停止或者说在某种条件下停止。</p>
+<p>那么新版的代码来了。</p>
+<pre><code>public void request() {
+
+    thread = new Thread(new Runnable() {
+        @Override
+        public void run() {
+            // 请求网络
+            // ...
+            // ...
+            if (thread != null &amp;&amp; !thread.isInterrupted()) {
+                // 返回结果请求To UI
+            }
+        }
+    });
+
+    thread.start();
+
+    new Handler().postDelayed(new Runnable() {
+        @Override
+        public void run() {
+            if (thread != null &amp;&amp; thread.isAlive()) {
+                thread.interrupt();
+            }
+        }
+    }, 5 * 1000);
+
+}
+</code></pre><p>看上去很不错。当我在review code的时候，发现了一些问题。<br><em>举个栗子</em><br>第一个请求过来了，用时2秒，这个时候我们的handler还在跑。第4秒，又来了一个请求，第5秒，handler的时间到了，此刻的thread指向于新的一次请求，于是我们的一个完美请求就被中断掉了。</p>
+<h2 id="u7B2C_u4E09_u53D1"><a href="#u7B2C_u4E09_u53D1" class="headerlink" title="第三发"></a>第三发</h2><p>当然这也是有解决办法的，我们在第二次请求的时候，首先把前一次的定时任务给取消掉。基于这个需求，我们可以使用Timer，ScheduledExecutorService，HandlerThread，包括第二发中的Handler都是可以的。<br>经过网上的东看看西逛逛，最终选择ScheduledExecutorService作为这个定时器。</p>
+<p>最终版代码</p>
+<pre><code>private QueryThread queryThread;
+private ScheduledExecutorService executor;
+
+public void request() {
+    if (queryThread != null &amp;&amp; queryThread.isAlive()) {
+        queryThread.interrupt();
+        executor.shutdownNow();
+    }
+    queryThread = new QueryThread();
+    queryThread.start();
+
+    executor = Executors.newScheduledThreadPool(1);
+    executor.schedule(new Runnable() {
+        @Override
+        public void run() {
+            if (!queryThread.isInterrupted()) {
+                queryThread.interrupt();
+                // 告知UI
+            }
+        }
+    }, 5 * 1000, TimeUnit.MILLISECONDS);
+}
+
+class QueryThread extends Thread {
+    @Override
+    public void run() {
+        // 请求网络
+        // ...
+        // ...
+        if (!isInterrupted()) {
+            // 返回结果请求UI
+        }
+    }
+}
+</code></pre><h2 id="u7B2C_u56DB_u53D1"><a href="#u7B2C_u56DB_u53D1" class="headerlink" title="第四发"></a>第四发</h2><p>这次来谈谈最佳实践（这部分是引用的）</p>
+<pre><code>public class BestPractice extends Thread {
+    private volatile boolean finished = false;   // ① volatile条件变量
+    public void stopMe() {
+        finished = true;    // ② 发出停止信号
+    }
+    @Override
+    public void run() {
+        while (!finished) {    // ③ 检测条件变量
+            // do dirty work   // ④业务代码
+        }
+    }
+}
+</code></pre><p>当④处的代码阻塞于wait()或sleep()时，线程不能立刻检测到条件变量。因此②处的代码最好同时调用interrupt()方法。</p>
+<h2 id="u53C2_u8003_u6587_u732E"><a href="#u53C2_u8003_u6587_u732E" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://ibruce.info/2013/12/19/how-to-stop-a-java-thread/" target="_blank" rel="external">如何停止一个正在运行的java线程</a></p>
 
       
     </div>
@@ -284,7 +427,11 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
       
         <div class="post-tags">
           
-            <a href="/tags/随笔/" rel="tag">#随笔</a>
+            <a href="/tags/Android/" rel="tag">#Android</a>
+          
+            <a href="/tags/JAVA/" rel="tag">#JAVA</a>
+          
+            <a href="/tags/Thread/" rel="tag">#Thread</a>
           
         </div>
       
@@ -293,13 +440,13 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/18/hello-hexo/" rel="next" title="生活总是得记录一下">
+                <i class="fa fa-chevron-left"></i> 生活总是得记录一下
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/27/如果优雅的-停止-一个正在运行的JAVA线程/" rel="prev" title="如果优雅的"停止"一个正在运行的JAVA线程">
-                如果优雅的"停止"一个正在运行的JAVA线程 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -325,8 +472,8 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/18/hello-hexo/"
-           data-title="生活总是得记录一下" data-url="http://yoursite.com/2016/03/18/hello-hexo/">
+      <div class="ds-thread" data-thread-key="2016/04/27/如果优雅的-停止-一个正在运行的JAVA线程/"
+           data-title="如果优雅的"停止"一个正在运行的JAVA线程" data-url="http://yoursite.com/2016/04/27/如果优雅的-停止-一个正在运行的JAVA线程/">
       </div>
     
   </div>
@@ -432,7 +579,7 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u7F18_u8D77"><span class="nav-number">1.</span> <span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hello_world"><span class="nav-number">2.</span> <span class="nav-text">hello world</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#why_Hexo"><span class="nav-number">3.</span> <span class="nav-text">why Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u642D_u5EFA_u8FC7_u7A0B"><span class="nav-number">4.</span> <span class="nav-text">搭建过程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u751F_u6D3B_u603B_u662F_u5F97_u8BB0_u5F55_u4E00_u4E0B"><span class="nav-number">5.</span> <span class="nav-text">生活总是得记录一下</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u7B2C_u4E00_u53D1"><span class="nav-number">1.</span> <span class="nav-text">第一发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7B2C_u4E8C_u53D1"><span class="nav-number">2.</span> <span class="nav-text">第二发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7B2C_u4E09_u53D1"><span class="nav-number">3.</span> <span class="nav-text">第三发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7B2C_u56DB_u53D1"><span class="nav-number">4.</span> <span class="nav-text">第四发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u53C2_u8003_u6587_u732E"><span class="nav-number">5.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

@@ -208,6 +208,132 @@
             
               
                 
+                <a class="post-title-link" href="/2016/04/27/如果优雅的-停止-一个正在运行的JAVA线程/" itemprop="url">
+                  如果优雅的"停止"一个正在运行的JAVA线程
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-27T22:23:19+08:00" content="2016-04-27">
+              2016-04-27
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/27/如果优雅的-停止-一个正在运行的JAVA线程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/27/如果优雅的-停止-一个正在运行的JAVA线程/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>最近在开发过程中，遇到一个需求</p>
+<ul>
+<li>当用户输完快递单号后，发起请求，自动补全手机号码</li>
+<li>请求超过5秒后结束请求，并提示用户没找到手机号</li>
+</ul>
+<h2 id="u7B2C_u4E00_u53D1"><a href="#u7B2C_u4E00_u53D1" class="headerlink" title="第一发"></a>第一发</h2><p>很简单的需求，是吧。然后我就啪啪啪写下了代码。</p>
+<pre><code>public void request() {
+
+    thread = new Thread(new Runnable() {
+        @Override
+        public void run() {
+            // 请求网络
+            // ...
+            // ...
+            // 返回结果请求To UI
+        }
+    });
+
+    thread.start();
+
+    new Handler().postDelayed(new Runnable() {
+        @Override
+        public void run() {
+            thread.stop();
+        }
+    }, 5 * 1000);
+
+}
+</code></pre><p>看起来是这么的完美。不过这个stop上面有一根删除线是什么鬼。它的文档是这样描述的。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/27/如果优雅的-停止-一个正在运行的JAVA线程/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/18/hello-hexo/" itemprop="url">
                   生活总是得记录一下
                 </a>
@@ -257,13 +383,10 @@
 
       
         
-          
-          缘起一直嚷嚷着要建一个博客，但是由于各种原因（当然主要是因为懒）。最近刚刚换了一家公司，产品处于调整期，于是我就有了大把大把的时间向博客说一声hello world。
-hello world既然谈到了”hello world”,那么就用那些年听到的一个段子作为开头。
-
-程序员告老还乡,想安度晚年,于
-          ...
-
+          <h1 id="u7F18_u8D77"><a href="#u7F18_u8D77" class="headerlink" title="缘起"></a>缘起</h1><p>一直嚷嚷着要建一个博客，但是由于各种原因（当然主要是因为懒）。最近刚刚换了一家公司，产品处于调整期，于是我就有了大把大把的时间向博客说一声hello world。</p>
+<h1 id="hello_world"><a href="#hello_world" class="headerlink" title="hello world"></a>hello world</h1><p>既然谈到了”hello world”,那么就用那些年听到的一个段子作为开头。</p>
+<blockquote>
+<p>程序员告老还乡,想安度晚年,于是决定在书法上有所造诣。一日,饭后突生雅兴,一番研墨拟纸,并点上上好檀香。定神片刻,泼墨挥毫,挥起毛笔在白纸上郑重的写下: Hello World<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/18/hello-hexo/#more" rel="contents">
               阅读全文 &raquo;
@@ -332,7 +455,7 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -342,7 +465,7 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -515,6 +638,30 @@ hello world既然谈到了”hello world”,那么就用那些年听到的一个
   
   
   
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
+  
+
 
   
 
